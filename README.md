@@ -87,3 +87,4 @@ hello-world         latest              bf756fb1ae65        4 months ago        
 - docker images to see info about images
 
 - Intsalling docker gives you the client and Daemon, client makes API call to Daemon, Daemon implements the Docker Remote API, docker run starts a new container
+- Docker Hub is a docker image registry, a place where to can store images right a place where we want to use containers
