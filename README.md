@@ -5,6 +5,28 @@ https://oracle-base.com/articles/linux/docker-install-docker-on-oracle-linux-ol7
 https://stackoverflow.com/questions/48957195/how-to-fix-docker-got-permission-denied-issue
 
 
+# docker version
+Client:
+ Version:           18.09.1-ol
+ API version:       1.39
+ Go version:        go1.10.8
+ Git commit:        b2a1f2a
+ Built:             Sat Feb  9 02:05:49 2019
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          18.09.1-ol
+  API version:      1.39 (minimum version 1.12)
+  Go version:       go1.10.8
+  Git commit:       b2a1f2a
+  Built:            Sat Feb  9 01:54:37 2019
+  OS/Arch:          linux/amd64
+  Experimental:     false
+  Default Registry: docker.io
+
+
 # docker run hello-world
 Unable to find image 'hello-world:latest' locally
 Trying to pull repository docker.io/library/hello-world ...
@@ -33,3 +55,6 @@ Share images, automate workflows, and more with a free Docker ID:
 
 For more examples and ideas, visit:
  https://docs.docker.com/get-started/
+
+
+# 
