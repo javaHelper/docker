@@ -332,3 +332,62 @@ Questions? Try the support group
 
 ```
 
+# MySQL Setup on Docker
+
+```
+docker pull mysql
+Using default tag: latest
+Trying to pull repository docker.io/library/mysql ...
+latest: Pulling from docker.io/library/mysql
+54fec2fa59d0: Pull complete
+bcc6c6145912: Pull complete
+951c3d959c9d: Pull complete
+05de4d0e206e: Pull complete
+319f0394ef42: Pull complete
+d9185034607b: Pull complete
+013a9c64dadc: Pull complete
+42f3f7d10903: Pull complete
+c4a3851d9207: Pull complete
+82a1cc65c182: Pull complete
+a0a6b01efa55: Pull complete
+bca5ce71f9ea: Pull complete
+Digest: sha256:61a2a33f4b8b4bc93b7b6b9e65e64044aaec594809f818aeffbff69a893d1944
+Status: Downloaded newer image for mysql:latest
+
+[user@user]$ docker run -d --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=test mysql
+5ad7a9d9f464f3c026f1668f5507d3bc9eb98069b6a543ad94e6a74c68dfefc7
+
+[user@user]$ docker exec -it mysql bash -l
+root@5ad7a9d9f464:/# 
+
+root@5ad7a9d9f464:/# mysql -uroot -proot
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 8
+Server version: 8.0.20 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show database;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'database' at line 1
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
+| test               |
++--------------------+
+5 rows in set (0.01 sec)
+
+mysql>
+```
+
