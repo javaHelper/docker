@@ -77,3 +77,13 @@ docker images
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 hello-world         latest              bf756fb1ae65        4 months ago        13.3kB
 ```
+
+# Highlights
+
+- docker run to run a new container
+
+- docker ps to see running and stopped containers
+
+- docker images to see info about images
+
+- Intsalling docker gives you the client and Daemon, client makes API call to Daemon, Daemon implements the Docker Remote API, docker run starts a new container
