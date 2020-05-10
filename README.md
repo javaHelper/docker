@@ -141,4 +141,22 @@ alpine              latest              f70734b6a266        2 weeks ago         
 hello-world         latest              bf756fb1ae65        4 months ago        13.3kB
 ```
 
+# Remove Docker Image
 
+```
+docker rmi ubuntu:16.04
+Untagged: ubuntu:16.04
+Untagged: ubuntu@sha256:db6697a61d5679b7ca69dbde3dad6be0d17064d5b6b0e9f7be8d456ebb337209
+Deleted: sha256:005d2078bdfab5066ae941cea93f644f5fd25521849c870f4e1496f4526d1d5b
+Deleted: sha256:a83c92a7c7a0f4a52fc74fa38496be9a5e6b738bc5fd5d60e54768fed238c173
+Deleted: sha256:c6a36d55655e576fc8166a32fd05e281d03bedc26b1118902e92e7ba421dfa72
+Deleted: sha256:d1c997f15060e07ff557383387d6839e0377873837025fc843fa5d94bea2c4e5
+Deleted: sha256:b592b5433bbffb04389a0e6349cdba6af8d006779bbb93beb69aa77d59133be4
+
+
+docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+ubuntu              latest              1d622ef86b13        2 weeks ago         73.9MB
+alpine              latest              f70734b6a266        2 weeks ago         5.61MB
+hello-world         latest              bf756fb1ae65        4 months ago        13.3kB
+```
