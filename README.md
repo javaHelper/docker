@@ -217,3 +217,22 @@ CONTAINER ID        IMAGE                                COMMAND                
 ```
 
 
+```
+docker stop $(docker ps -aq)
+2381527f69b1
+4050b78fd240
+88898a9f491f
+3f864b592ac0
+```
+
+Gives us all -a = all, -q = quietly
+
+```
+docker rm  $(docker ps -aq)
+2381527f69b1
+4050b78fd240
+88898a9f491f
+3f864b592ac0
+```
+
+
