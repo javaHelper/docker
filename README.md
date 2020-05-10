@@ -208,6 +208,7 @@ root@2381527f69b1:/#
 
 To get out of CRTL + P + Q 
 
+```
 root@2381527f69b1:/# [user@10-168-129-9 ~]$
 
 docker ps
