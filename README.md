@@ -235,4 +235,35 @@ docker rm  $(docker ps -aq)
 3f864b592ac0
 ```
 
+```
+docker rmi $(docker images -q)
+Untagged: ubuntu:latest
+Untagged: ubuntu@sha256:747d2dbbaaee995098c9792d99bd333c6783ce56150d1b11e333bbceed5c54d7
+Deleted: sha256:1d622ef86b138c7e96d4f797bf5e4baca3249f030c575b9337638594f2b63f01
+Deleted: sha256:279e836b58d9996b5715e82a97b024563f2b175e86a53176846684f0717661c3
+Deleted: sha256:39865913f677c50ea236b68d81560d8fefe491661ce6e668fd331b4b680b1d47
+Deleted: sha256:cac81188485e011e56459f1d9fc9936625a1b62cacdb4fcd3526e5f32e280387
+Deleted: sha256:7789f1a3d4e9258fbe5469a8d657deb6aba168d86967063e9b80ac3e1154333f
+Untagged: alpine:latest
+Untagged: alpine@sha256:9a839e63dad54c3a6d1834e29692c8492d93f90c59c978c1ed79109ea4fb9a54
+Deleted: sha256:f70734b6a266dcb5f44c383274821207885b549b75c8e119404917a61335981a
+Deleted: sha256:3e207b409db364b595ba862cdc12be96dcdad8e36c59a03b7b3b61c946a5741a
+Untagged: nigelpoulton/pluralsight-docker-ci:latest
+Untagged: nigelpoulton/pluralsight-docker-ci@sha256:61bc64850a5f2bfbc65967cc33feaae8a77c8b49379c55aaf05bb02dcee41451
+Deleted: sha256:dd7a37fe7c1e6f3b9bcd1c51cad0a54fde3f393ac458af3b009b2032978f599d
+Deleted: sha256:62c2dc8575cf79fddcbf8466311d893100d89d8fe30532cd8949a6399bf0c59e
+Deleted: sha256:41d87f201eb33b39af235cb7aae8dce404407dbff9654886854ef076fedec0ed
+Deleted: sha256:fec1957285f8b705269c691bd78a70584888e4a7674a7f3e74351f131926edcf
+Deleted: sha256:27a18cba123036ad9cedaeed9dc75d3a55c81bf2da5c21837a2f23583882aee4
+Deleted: sha256:937d6f78d3ffb0b5bd95a1e8a39974008915ac044f7c7c89a18962efe973ca81
+Deleted: sha256:9e607bb861a7d58bece26dd2c02874beedd6a097c1b6eca5255d5eb0d2236983
+Untagged: hello-world:latest
+Untagged: hello-world@sha256:8e3114318a995a1ee497790535e7b88365222a21771ae7e53687ad76563e8e76
+Deleted: sha256:bf756fb1ae65adf866bd8c456593cd24beb6a0a061dedf42b26a993176745f6b
+Deleted: sha256:9c27e219663c25e0f28493790cc0b88bc973ba3b1686355f221c38a36978ac63
+
+
+[user@10-168-129-9 ~]$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+```
 
