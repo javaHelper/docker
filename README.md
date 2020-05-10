@@ -131,3 +131,14 @@ ee690f2d57a1: Pull complete
 Digest: sha256:db6697a61d5679b7ca69dbde3dad6be0d17064d5b6b0e9f7be8d456ebb337209
 Status: Downloaded newer image for ubuntu:16.04
 ```
+
+```
+docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+ubuntu              16.04               005d2078bdfa        2 weeks ago         125MB
+ubuntu              latest              1d622ef86b13        2 weeks ago         73.9MB
+alpine              latest              f70734b6a266        2 weeks ago         5.61MB
+hello-world         latest              bf756fb1ae65        4 months ago        13.3kB
+```
+
+
