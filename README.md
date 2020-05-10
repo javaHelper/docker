@@ -268,3 +268,18 @@ Deleted: sha256:9c27e219663c25e0f28493790cc0b88bc973ba3b1686355f221c38a36978ac63
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 ```
 
+# Termonology
+
+- A cluster = A swarm
+- Engines in swarn run in swarn mode
+
+Manager nodes maintain the swarm
+
+ - H/A  - recommands 3 or 5
+ - Only one is leader
+ 
+ worker nodes execute tasks
+ 
+ Services
+ - Declarative & saclable
+
