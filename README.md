@@ -184,3 +184,12 @@ docker ps
 CONTAINER ID        IMAGE                                COMMAND                  CREATED             STATUS              PORTS                  NAMES
 4050b78fd240        nigelpoulton/pluralsight-docker-ci   "/bin/sh -c 'cd /src…"   4 minutes ago       Up 4 minutes        0.0.0.0:80->8080/tcp   web
 ```
+
+# Stop the container
+
+```
+docker stop web
+web
+```
+
+Now hit the ``http://ech-10-168-129-9``, you should see things are not working !
