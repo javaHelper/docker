@@ -310,3 +310,25 @@ Digest: sha256:50d7b0aef8165b542612a4f57fd7b70703eb7db095588fb76e5a3f01cda396a0
 Status: Downloaded newer image for mongo:latest
 
 ```
+
+
+```
+docker run --name CONTAINERNAME --restart=always -d -p 8080:8080 mongo mongod --auth
+b9d1277dbc7aaa028489c3f72f4b3ab22bd6487654d44c44d1cbf242540ececc
+[dc-user@ech-10-168-129-9 PRATEEK]$ sudo docker exec -i -t CONTAINERNAME bash
+[sudo] password for dc-user:
+root@b9d1277dbc7a:/# mongo
+MongoDB shell version v4.2.6
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("63c972d5-d558-4f0a-b088-efa38787a71e") }
+MongoDB server version: 4.2.6
+Welcome to the MongoDB shell.
+For interactive help, type "help".
+For more comprehensive documentation, see
+        http://docs.mongodb.org/
+Questions? Try the support group
+        http://groups.google.com/group/mongodb-user
+> show dbs
+
+```
+
