@@ -209,3 +209,11 @@ root@2381527f69b1:/#
 To get out of CRTL + P + Q 
 
 root@2381527f69b1:/# [dc-user@ech-10-168-129-9 ~]$
+
+docker ps
+CONTAINER ID        IMAGE                                COMMAND                  CREATED             STATUS              PORTS                  NAMES
+2381527f69b1        ubuntu:latest                        "/bin/bash"              4 minutes ago       Up 4 minutes                               temp
+4050b78fd240        nigelpoulton/pluralsight-docker-ci   "/bin/sh -c 'cd /src…"   30 minutes ago      Up 5 minutes        0.0.0.0:80->8080/tcp   web
+```
+
+
