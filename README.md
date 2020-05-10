@@ -93,3 +93,41 @@ hello-world         latest              bf756fb1ae65        4 months ago        
 
 Images = Stopped Containers
 Containers = Running Images
+
+
+```
+docker pull alpine
+Using default tag: latest
+Trying to pull repository docker.io/library/alpine ...
+latest: Pulling from docker.io/library/alpine
+cbdbe7a5bc2a: Pull complete
+Digest: sha256:9a839e63dad54c3a6d1834e29692c8492d93f90c59c978c1ed79109ea4fb9a54
+Status: Downloaded newer image for alpine:latest
+```
+
+# Get the specific version of Images
+
+```
+docker pull ubuntu
+Using default tag: latest
+Trying to pull repository docker.io/library/ubuntu ...
+latest: Pulling from docker.io/library/ubuntu
+d51af753c3d3: Pull complete
+fc878cd0a91c: Pull complete
+6154df8ff988: Pull complete
+fee5db0ff82f: Pull complete
+Digest: sha256:747d2dbbaaee995098c9792d99bd333c6783ce56150d1b11e333bbceed5c54d7
+Status: Downloaded newer image for ubuntu:latest
+```
+
+```
+docker pull ubuntu:16.04
+Trying to pull repository docker.io/library/ubuntu ...
+16.04: Pulling from docker.io/library/ubuntu
+e92ed755c008: Pull complete
+b9fd7cb1ff8f: Pull complete
+ee690f2d57a1: Pull complete
+53e3366ec435: Pull complete
+Digest: sha256:db6697a61d5679b7ca69dbde3dad6be0d17064d5b6b0e9f7be8d456ebb337209
+Status: Downloaded newer image for ubuntu:16.04
+```
