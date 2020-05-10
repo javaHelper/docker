@@ -6,6 +6,7 @@ https://stackoverflow.com/questions/48957195/how-to-fix-docker-got-permission-de
 
 
 # docker version
+```
 Client:
  Version:           18.09.1-ol
  API version:       1.39
@@ -25,9 +26,11 @@ Server: Docker Engine - Community
   OS/Arch:          linux/amd64
   Experimental:     false
   Default Registry: docker.io
+  ```
 
 
 # docker run hello-world
+```
 Unable to find image 'hello-world:latest' locally
 Trying to pull repository docker.io/library/hello-world ...
 latest: Pulling from docker.io/library/hello-world
@@ -55,6 +58,6 @@ Share images, automate workflows, and more with a free Docker ID:
 
 For more examples and ideas, visit:
  https://docs.docker.com/get-started/
-
+```
 
 # 
