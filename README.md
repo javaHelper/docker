@@ -160,3 +160,22 @@ ubuntu              latest              1d622ef86b13        2 weeks ago         
 alpine              latest              f70734b6a266        2 weeks ago         5.61MB
 hello-world         latest              bf756fb1ae65        4 months ago        13.3kB
 ```
+
+```
+run -d --name web -p 80:8080 nigelpoulton/pluralsight-docker-ci
+Unable to find image 'nigelpoulton/pluralsight-docker-ci:latest' locally
+Trying to pull repository docker.io/nigelpoulton/pluralsight-docker-ci ...
+latest: Pulling from docker.io/nigelpoulton/pluralsight-docker-ci
+729ec3a6ada3: Pull complete
+f0a3eea3dca0: Pull complete
+e07851c50ad6: Pull complete
+f78e7cd1f8dc: Pull complete
+7cad1fbd2f07: Pull complete
+22835c51693f: Pull complete
+Digest: sha256:61bc64850a5f2bfbc65967cc33feaae8a77c8b49379c55aaf05bb02dcee41451
+Status: Downloaded newer image for nigelpoulton/pluralsight-docker-ci:latest
+4050b78fd240763286cc74140163dedb68978bac5d108fdb17550e80c57f911c
+```
+
+then simply hit the ``http://ech-10-168-129-9``,  where ``ech-10-168-129-9`` is the docker host.
+
