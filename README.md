@@ -283,3 +283,30 @@ Manager nodes maintain the swarm
  Services
  - Declarative & saclable
 
+Tasks
+- Assigned to workers
+
+# Mongo Setup
+
+```
+ docker pull mongo
+Using default tag: latest
+Trying to pull repository docker.io/library/mongo ...
+latest: Pulling from docker.io/library/mongo
+23884877105a: Pull complete
+bc38caa0f5b9: Pull complete
+2910811b6c42: Pull complete
+36505266dcc6: Pull complete
+a4d269900d94: Pull complete
+5e2526abb80a: Pull complete
+d3eece1f39ec: Pull complete
+358ed78d3204: Pull complete
+1a878b8604ae: Pull complete
+dde03a2883d0: Pull complete
+4ffe534daa34: Pull complete
+f164ba21e17c: Pull complete
+6494c387442c: Pull complete
+Digest: sha256:50d7b0aef8165b542612a4f57fd7b70703eb7db095588fb76e5a3f01cda396a0
+Status: Downloaded newer image for mongo:latest
+
+```
