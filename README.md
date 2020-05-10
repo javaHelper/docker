@@ -193,3 +193,19 @@ web
 ```
 
 Now hit the ``http://ech-10-168-129-9``, you should see things are not working !
+
+Now again start the container
+
+``
+docker start web
+web
+```
+
+```
+docker run -it --name temp ubuntu:latest /bin/bash
+root@2381527f69b1:/#
+```
+
+To get out of CRTL + P + Q 
+
+root@2381527f69b1:/# [dc-user@ech-10-168-129-9 ~]$
