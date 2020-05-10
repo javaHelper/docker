@@ -60,4 +60,13 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
 
-# 
+```
+$ docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+
+$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                      PORTS               NAMES
+88898a9f491f        hello-world         "/hello"            7 minutes ago       Exited (0) 7 minutes ago                        gallant_lumiere
+3f864b592ac0        hello-world         "/hello"            18 minutes ago      Exited (0) 18 minutes ago                       clever_jennings
+```
+
