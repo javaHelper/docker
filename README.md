@@ -70,3 +70,10 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 3f864b592ac0        hello-world         "/hello"            18 minutes ago      Exited (0) 18 minutes ago                       clever_jennings
 ```
 
+# List Docker Images
+
+```
+docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+hello-world         latest              bf756fb1ae65        4 months ago        13.3kB
+```
