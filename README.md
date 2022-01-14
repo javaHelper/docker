@@ -405,4 +405,54 @@ mysql>
 
 https://www.freecodecamp.org/news/how-to-remove-images-in-docker/
 
+# Setting up Postgres
 
+```
+prateekashtikar@Prateeks-MacBook-Pro Documents % docker pull postgres
+Using default tag: latest
+latest: Pulling from library/postgres
+927a35006d93: Already exists 
+deff285050ab: Pull complete 
+e224327e9ea2: Pull complete 
+a193ca6ee34e: Pull complete 
+40dd6251c43b: Pull complete 
+f6e965c00368: Pull complete 
+5aa7eb1c3a64: Pull complete 
+b306316bf0e9: Pull complete 
+0f29cd457498: Pull complete 
+99c25330d51c: Pull complete 
+fa592219b219: Pull complete 
+51fb2144651e: Pull complete 
+90502911dd39: Pull complete 
+Digest: sha256:f329d076a8806c0ce014ce5e554ca70f4ae9407a16bb03baa7fef287ee6371f1
+Status: Downloaded newer image for postgres:latest
+docker.io/library/postgres:latest
+```
+
+## 1. Create a folder in a known location for you
+`mkdir ${HOME}/postgres-data/`
+
+## 2. run the postgres image
+`docker run -d --name dev-postgres -e POSTGRES_USER=postgres POSTGRES_PASSWORD=postgres	-v ${HOME}/postgres-data/:/var/lib/postgresql/data -p 5432:5432 postgres`
+
+## 3. check that the container is running
+```
+docker ps
+>>>
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                    NAMES
+dfa570d6e843        postgres            "docker-entrypoint.s…"   27 hours ago        Up 3 seconds        0.0.0.0:5432->5432/tcp   postgres-test
+```
+
+```
+docker exec -it dev-postgres bash
+>>> Now you are in the container's bash console. Connect to the database
+root@dfa570d6e843:/# psql -h localhost -U postgres
+>>>
+psql (12.2 (Debian 12.2-2.pgdg100+1))
+Type "help" for help.
+postgres-# \l
+List of databases
+Name       |  Owner   | Encoding |  Collate   |   Ctype    |   ...
+-----------+----------+----------+------------+------------+------postgres   | postgres |   UTF8   | en_US.utf8 | en_US.utf8 |   ...
+
+```
