@@ -433,7 +433,7 @@ docker.io/library/postgres:latest
 `mkdir ${HOME}/postgres-data/`
 
 ## 2. run the postgres image
-`docker run -d --name dev-postgres -e POSTGRES_USER=postgres POSTGRES_PASSWORD=postgres	-v ${HOME}/postgres-data/:/var/lib/postgresql/data -p 5432:5432 postgres`
+`docker run -d --name dev-postgres -e POSTGRES_PASSWORD=postgres	-v ${HOME}/postgres-data/:/var/lib/postgresql/data -p 5432:5432 postgres`
 
 ## 3. check that the container is running
 ```
