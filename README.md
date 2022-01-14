@@ -391,3 +391,18 @@ mysql> show databases;
 mysql>
 ```
 
+# Remove all images at once
+
+`docker rmi $(docker images -q)`
+
+# Stop all running containers
+
+`docker stop $(docker ps -a -q)`
+
+# Delete all stopped containers
+
+`docker rm $(docker ps -a -q)`
+
+https://www.freecodecamp.org/news/how-to-remove-images-in-docker/
+
+
