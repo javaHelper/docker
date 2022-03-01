@@ -456,3 +456,21 @@ Name       |  Owner   | Encoding |  Collate   |   Ctype    |   ...
 -----------+----------+----------+------------+------------+------postgres   | postgres |   UTF8   | en_US.utf8 | en_US.utf8 |   ...
 
 ```
+
+# Start AxonIQ
+
+```
+docker run -d --name axon-server -p 8024:8024 -p 8124:8124 --restart always axoniq/axonserver:latest
+```
+
+# Start MongoDB
+
+```
+docker run -it -d --name mongo-container -p 27017:27017 --restart always -v mongodb_data_container:/data/db mongo:latest 
+```
+
+# MySQL
+
+```
+docker run -it -d --name mysql-container -p 3306:3306 -e MYSQL_ROOT_PASSWORD=Password --restart always  -v mysql_data_container:/var/lib/mysql  mysql:latest
+```
