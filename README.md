@@ -354,7 +354,7 @@ bca5ce71f9ea: Pull complete
 Digest: sha256:61a2a33f4b8b4bc93b7b6b9e65e64044aaec594809f818aeffbff69a893d1944
 Status: Downloaded newer image for mysql:latest
 
-[user@user]$ docker run -d --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=test mysql
+[user@user]$ docker run -d --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=order-service mysql
 5ad7a9d9f464f3c026f1668f5507d3bc9eb98069b6a543ad94e6a74c68dfefc7
 
 [user@user]$ docker exec -it mysql bash -l
@@ -474,3 +474,5 @@ docker run -it -d --name mongo-container -p 27017:27017 --restart always -v mong
 ```
 docker run -it -d --name mysql-container -p 3306:3306 -e MYSQL_ROOT_PASSWORD=Password --restart always  -v mysql_data_container:/var/lib/mysql  mysql:latest
 ```
+
+docker pull --platform linux/x86_64 mysql
