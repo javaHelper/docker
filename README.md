@@ -479,11 +479,11 @@ docker run -it -d --name mysql-container -p 3306:3306 -e MYSQL_ROOT_PASSWORD=Pas
 
 if you launched rabbitmq by using somthing like:
 
-```docker run -d --name some-rabbit -p 4369:4369 -p 5671:5671 -p 5672:5672 -p 15672:15672 rabbitmq```sh
+```docker run -d --name some-rabbit -p 4369:4369 -p 5671:5671 -p 5672:5672 -p 15672:15672 rabbitmq```
 
 then you can enable its management plugins while that container runs using the following command:
 
-```docker container exec -it some-rabbit rabbitmq-plugins enable rabbitmq_management```sh
+```docker container exec -it some-rabbit rabbitmq-plugins enable rabbitmq_management```
 
 
 and the management GUI is running on `http://localhost:15672` For management GUI
