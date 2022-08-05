@@ -492,3 +492,17 @@ and the management GUI is running on `http://localhost:15672` For management GUI
 username: guest
 
 password: guest
+
+# nginx
+
+```sh
+version: "3"
+services:
+  nginx:
+    image: nginx:1.15-alpine  
+    volumes:
+      - ./conf:/etc/nginx/conf.d
+    ports:
+      - 6566:6566
+    command: "nginx -c /etc/nginx/conf.d/nginx.conf"
+```
