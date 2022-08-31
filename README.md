@@ -506,3 +506,16 @@ services:
       - 6566:6566
     command: "nginx -c /etc/nginx/conf.d/nginx.conf"
 ```
+
+# Redis
+
+```
+version: '3'
+services:
+  redis:
+    container_name: redis
+    hostname: redis
+    image: redis:6.2
+    ports:
+    - 6379:6379
+```
