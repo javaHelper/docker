@@ -520,6 +520,10 @@ services:
     - 6379:6379
 ```
 
+```sh
+docker exec -it redis bash
+```
+
 # ActiveMQ
 
 Link: http://localhost:8161/admin,  username/password => admin/admin
