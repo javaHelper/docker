@@ -1,8 +1,14 @@
 version: '3'
 services:
   redis:
-    container_name: redis
-    hostname: redis
-    image: redis:6.2
+    image: redis
     ports:
-    - 6379:6379
+      - 6379:6379
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    depends_on:
+      - redis
+    environment:
+      - REDIS_HOSTS=redis:redis
+    ports:
+      - 8081:8081
