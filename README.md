@@ -4,6 +4,12 @@
 https://oracle-base.com/articles/linux/docker-install-docker-on-oracle-linux-ol7
 https://stackoverflow.com/questions/48957195/how-to-fix-docker-got-permission-denied-issue
 
+# Remove Java Version
+
+```
+sudo rm -rf /Library/Java/JavaVirtualMachines/jdk<version>.jdk
+```
+
 
 # docker version
 ```
