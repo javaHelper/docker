@@ -1,3 +1,4 @@
+# ./bin/nifi.sh set-single-user-credentials admin admin_password
 version: "3.9"
 
 services:
