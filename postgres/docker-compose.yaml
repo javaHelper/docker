@@ -4,9 +4,9 @@ services:
     image: postgres
     container_name: postgres
     environment:
-      - POSTGRES_USER=vinsguru
-      - POSTGRES_PASSWORD=admin
-      - POSTGRES_DB=userdb
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=postgres
     volumes:
       - ./docker-volume/db:/var/lib/postgresql/data
     ports:
